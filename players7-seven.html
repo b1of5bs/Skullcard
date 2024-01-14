@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Skullcard - 7 Player Normal Game</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/pirate swords 318px.png" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="index.html">Skullcard</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="game-rules.html">Game Rules</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="hierarchy.html">Card Hierarchy</a></li>
+                        <li class="nav-item"><a class="nav-link" target="_blank" href="pirates.html">Pirate Abilities</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><h1 class="font-weight-light">7 Player Game</h1><br>
+        <div class="container px-4 px-lg-5">            
+            <!-- Content Row-->
+            <div class="container px-1">
+                <!-- Player Names Input -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <input type="text" id="player1Name" placeholder="Player 1" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="player2Name" placeholder="Player 2" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="player3Name" placeholder="Player 3" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="player4Name" placeholder="Player 4" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="player5Name" placeholder="Player 5" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="player6Name" placeholder="Player 6" class="form-control">
+                    </div>
+                    <div class="col">
+                        <input type="text" id="player7Name" placeholder="Player 7" class="form-control">
+                    </div>
+                </div>
+            
+                <!-- Scoring Table -->
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Round</th>
+                            <th id="player1Header">Player 1</th>
+                            <th id="player2Header">Player 2</th>
+                            <th id="player3Header">Player 3</th>
+                            <th id="player4Header">Player 4</th>
+                            <th id="player5Header">Player 5</th>
+                            <th id="player6Header">Player 6</th>
+                            <th id="player7Header">Player 7</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td><input type="number" class="score-input" data-player="1" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="2" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="3" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="4" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="5" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="6" data-round="1" step="10" min="-200" max="200"></td>
+                            <td><input type="number" class="score-input" data-player="7" data-round="1" step="10" min="-200" max="200"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th>Total</th>
+                            <td><input type="number" id="totalPlayer1" readonly></td>
+                            <td><input type="number" id="totalPlayer2" readonly></td>
+                            <td><input type="number" id="totalPlayer3" readonly></td>
+                            <td><input type="number" id="totalPlayer4" readonly></td>
+                            <td><input type="number" id="totalPlayer5" readonly></td>
+                            <td><input type="number" id="totalPlayer6" readonly></td>
+                            <td><input type="number" id="totalPlayer7" readonly></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <a class="btn btn-primary" id="finalScoresTally7">Tally the scores!</a>
+            </div>            
+        </div>
+        <!-- Footer-->
+        <br><br><br>
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"><p class="m-0 text-center text-white">Copyright &copy; 2023 | Super Grover Productions, Inc. | All rights reserved.</p></div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/script_7players.js"></script>
+    </body>
+</html>
